@@ -52,7 +52,7 @@ class ReindentFilter:
 
     def _next_token(self, tlist, idx=-1):
         split_words = ('FROM', 'STRAIGHT_JOIN$', 'JOIN$', 'AND', 'OR',
-                       'GROUP BY', 'ORDER BY', 'UNION', 'VALUES',
+                       'GROUP BY', 'ORDER BY', 'INTERSECT', 'UNION', 'VALUES',
                        'SET', 'BETWEEN', 'EXCEPT', 'HAVING', 'LIMIT')
         m_split = T.Keyword, split_words, True
         tidx, token = tlist.token_next_by(m=m_split, idx=idx)

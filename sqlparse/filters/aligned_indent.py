@@ -18,7 +18,7 @@ class AlignedIndentFilter:
                    join_words, 'ON', by_words,
                    'WHERE', 'AND', 'OR',
                    'HAVING', 'LIMIT',
-                   'UNION', 'VALUES',
+                   'INTERSECT', 'UNION', 'VALUES',
                    'SET', 'BETWEEN', 'EXCEPT')
 
     def __init__(self, char=' ', n='\n'):

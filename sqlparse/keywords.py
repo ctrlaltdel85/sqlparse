@@ -72,6 +72,7 @@ SQL_REGEX = [
     (r'END(\s+IF|\s+LOOP|\s+WHILE)?\b', tokens.Keyword),
     (r'NOT\s+NULL\b', tokens.Keyword),
     (r'NULLS\s+(FIRST|LAST)\b', tokens.Keyword),
+    (r'INTERSECT\s+ALL\b', tokens.Keyword),
     (r'UNION\s+ALL\b', tokens.Keyword),
     (r'CREATE(\s+OR\s+REPLACE)?\b', tokens.Keyword.DDL),
     (r'DOUBLE\s+PRECISION\b', tokens.Name.Builtin),
